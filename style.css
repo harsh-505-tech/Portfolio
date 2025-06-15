@@ -18,20 +18,25 @@ body {
 html {
   scroll-padding-top: 100px; /* Offset fixed navbar height */
 }
-
 .navbar {
-  background-color: #1f1f1f;
+  background-color: #ffffff; /* Light background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar-toggler {
-  background-color: #ff5722; /* For mobile button */
+  border: none;
+  background-color: #ff5722;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
 }
 
 .navbar-toggler-icon {
-  filter: invert(1);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' 
+  xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' 
+  stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 
+  23h22'/%3E%3C/svg%3E");
 }
-
-.navbar-brand span {
+.navar-brand span {
   color: #ff5722;
   font-weight: bold;
 }
