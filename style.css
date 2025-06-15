@@ -6,36 +6,43 @@ body {
   background-color: #ffffff;
 }
 
+html {
+  scroll-padding-top: 100px; /* Offsets fixed navbar */
+}
+
 .navbar {
-  background-color: #0d1a26; /* Professional dark blue */
+  background-color: #1f1f1f; /* Dark professional */
 }
 
 .navbar-brand span {
-  color: #00d1b2; /* Teal accent */
+  color: #ff5722; /* Orange-red accent */
   font-weight: bold;
 }
 
 section {
   transition: all 0.3s ease-in-out;
+  padding-top: 80px;
+  margin-top: 40px;
 }
 
 h1, h2, h5 {
   font-weight: 600;
-  color: #0d1a26;
+  color: #2c2c2c;
 }
 
 .card {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
   border: none;
 }
 
 .card:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
+  background-color: #fceae8;
 }
 
 blockquote {
-  border-left: 5px solid #00d1b2;
+  border-left: 5px solid #ff5722;
   padding-left: 15px;
   color: #333;
 }
@@ -46,7 +53,7 @@ form input, form textarea {
 }
 
 footer {
-  background-color: #0d1a26;
+  background-color: #1f1f1f;
   color: #ffffff;
   font-size: 0.9rem;
 }
@@ -58,7 +65,7 @@ footer {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #00d1b2 !important;
+  color: #ff5722 !important;
 }
 
 .technology-icon {
@@ -69,10 +76,10 @@ footer {
 }
 
 .btn-primary {
-  background-color: #00d1b2;
+  background-color: #ff5722;
   border: none;
 }
 
 .btn-primary:hover {
-  background-color: #00a896;
+  background-color: #e64a19;
 }
