@@ -7,7 +7,93 @@ body {
 }
 
 html {
-  scroll-padding-top: 100px; /* Offsets fixed navbar */
+  scroll-padding-top: 100px; /* Offsets fixed nav/* style.css */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-padding-top: 100px; /* Offset fixed navbar height */
+}
+
+.navbar {
+  background-color: #1f1f1f;
+}
+
+.navbar-toggler {
+  background-color: #ff5722; /* For mobile button */
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+.navbar-brand span {
+  color: #ff5722;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-weight: 500;
+  color: #ffffff !important;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff5722 !important;
+}
+
+section {
+  transition: all 0.3s ease-in-out;
+  padding-top: 80px;
+  margin-top: 40px;
+}
+
+h1, h2, h5 {
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.3s;
+  border: none;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background-color: #fceae8;
+}
+
+blockquote {
+  border-left: 5px solid #ff5722;
+  padding-left: 15px;
+  color: #333;
+}
+
+form input, form textarea {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #ff5722;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e64a19;
+}
+bar */
 }
 
 .navbar {
