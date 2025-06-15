@@ -5,94 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Web Pixel</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="bg-dark text-white text-center py-5">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">Web <span style="color:#ffc107;">Pixel</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#projects">Our Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#technologies">Technologies</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="bg-primary text-white text-center py-5">
     <h1 class="display-4">Web Pixel</h1>
-    <p class="lead">We Build Digital Solutions for Modern Businesses</p>
+    <p class="lead">We Build Digital Solutions For Your Business</p>
   </header>
 
+  <!-- About -->
   <section id="about" class="container py-5">
     <h2 class="text-center mb-4">About Us</h2>
-    <p class="text-center">We are a professional web development agency offering innovative websites, apps, and branding for businesses of all sizes. From restaurants to real estate and small businesses — we help bring your ideas online.</p>
+    <p class="text-center">Web Pixel is a creative digital agency that helps businesses like Restaurants, Real Estate, and Small Enterprises create beautiful, responsive, and cost-effective websites with 100% client satisfaction.</p>
   </section>
 
-  <section id="services" class="bg-light py-5">
+  <!-- Services -->
+  <section id="projects" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Our Services</h2>
-      <div class="row text-center">
-        <div class="col-md-4"><h5>Web Development</h5><p>Responsive, functional, and modern websites.</p></div>
-        <div class="col-md-4"><h5>UI/UX Design</h5><p>Clean and user-centered designs.</p></div>
-        <div class="col-md-4"><h5>SEO & Marketing</h5><p>Boost your business visibility online.</p></div>
+      <h2 class="text-center mb-4">Our Work</h2>
+      <div class="row text-center mb-4">
+        <div class="col-md-3"><i class="bi bi-shop-window fs-1 text-primary"></i><p>Restaurants</p></div>
+        <div class="col-md-3"><i class="bi bi-buildings fs-1 text-success"></i><p>Real Estate</p></div>
+        <div class="col-md-3"><i class="bi bi-briefcase fs-1 text-warning"></i><p>Small Businesses</p></div>
+        <div class="col-md-3"><i class="bi bi-card-text fs-1 text-danger"></i><p>Templates</p></div>
       </div>
-    </div>
-  </section>
-
-  <section id="projects" class="container py-5">
-    <h2 class="text-center mb-4">Our Projects</h2>
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Pixel Restaurant Website</h5>
-            <p class="card-text">A responsive website for a modern restaurant with an online menu and reservation system.</p>
-            <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">Client: <cite>Foodies Delight</cite> - “Fast delivery & stylish design!”</footer>
-            </blockquote>
-          </div>
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <div class="card"><div class="card-body"><h5 class="card-title">Project One</h5><p class="card-text">Online food ordering system for local restaurant.</p></div></div>
         </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Real Estate Portal</h5>
-            <p class="card-text">Property listing platform with filters, maps, and booking options.</p>
-            <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">Client: <cite>DreamHomes</cite> - “Easy to use and elegant interface.”</footer>
-            </blockquote>
-          </div>
+        <div class="col-md-4 mb-3">
+          <div class="card"><div class="card-body"><h5 class="card-title">Project Two</h5><p class="card-text">Real estate website with property listings and maps.</p></div></div>
         </div>
-      </div>
-      <div class="col-md-4 mb-3">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title">Startup Business Site</h5>
-            <p class="card-text">Informative and attractive layout for small businesses.</p>
-            <blockquote class="blockquote mb-0">
-              <footer class="blockquote-footer">Client: <cite>QuickStart</cite> - “Great support and design.”</footer>
-            </blockquote>
-          </div>
+        <div class="col-md-4 mb-3">
+          <div class="card"><div class="card-body"><h5 class="card-title">Project Three</h5><p class="card-text">Business template website for brand promotion.</p></div></div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="bg-light py-5">
+  <!-- Technologies -->
+  <section id="technologies" class="container py-5">
+    <h2 class="text-center mb-4">Technologies We Use</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h5>Frontend</h5>
+        <p>HTML <i class="bi bi-code-slash"></i>, CSS <i class="bi bi-palette-fill"></i>, JavaScript <i class="bi bi-lightning"></i></p>
+      </div>
+      <div class="col-md-4">
+        <h5>Backend</h5>
+        <p>Python <i class="bi bi-cpu-fill"></i>, Node.js <i class="bi bi-hammer"></i>, Java, Next.js</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Database</h5>
+        <p>MySQL <i class="bi bi-database-fill"></i>, PostgreSQL</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="bg-light py-5">
     <div class="container">
-      <h2 class="text-center mb-4">Contact Us</h2>
-      <p class="text-center text-muted mb-4">Develop your professional business website for Restaurant, Real Estate, Small Business & more.</p>
-      <p class="text-center fw-bold">📧 Email: kevalm2005@gmail.com | 📞 Call: 84878 66533</p>
-      <p class="text-center text-success">Responsive • Attractive • Usable • Cost-effective • Client Satisfaction</p>
-      <form class="mx-auto" style="max-width: 600px;">
-        <div class="mb-3">
-          <input type="text" class="form-control" placeholder="Your Name" required>
-        </div>
-        <div class="mb-3">
-          <input type="email" class="form-control" placeholder="Your Email" required>
-        </div>
-        <div class="mb-3">
-          <textarea class="form-control" rows="4" placeholder="Your Message" required></textarea>
-        </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-dark">Send Message</button>
-        </div>
-      </form>
+      <h2 class="text-center mb-4">Client Testimonials</h2>
+      <blockquote class="blockquote text-center">
+        <p class="mb-0">"Web Pixel helped launch our site quickly with great design and performance."</p>
+        <footer class="blockquote-footer">Rahul Mehta, <cite title="Cafe Delight">Cafe Delight</cite></footer>
+      </blockquote>
+      <blockquote class="blockquote text-center mt-4">
+        <p class="mb-0">"Professional, reliable, and cost-effective. Highly recommended!"</p>
+        <footer class="blockquote-footer">Sneha Patel, <cite title="Sky Realty">Sky Realty</cite></footer>
+      </blockquote>
     </div>
   </section>
 
-  <footer class="text-center text-white bg-dark py-3">
+  <!-- Contact -->
+  <section id="contact" class="container py-5">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <p class="text-center">Want to grow your business with a website? Contact us to build your professional website for Restaurants, Real Estate, Small Businesses and more.</p>
+    <p class="text-center">Email: <strong>kevalm2005@gmail.com</strong> | Phone: <strong>84878 66533</strong></p>
+    <form class="mx-auto" style="max-width: 600px;" method="POST" action="/submit-form">
+      <div class="mb-3">
+        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+      </div>
+      <div class="mb-3">
+        <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+    </form>
+  </section>
+
+  <footer class="text-center text-white bg-primary py-3">
     <p>© 2025 Web Pixel. All rights reserved.</p>
   </footer>
 
